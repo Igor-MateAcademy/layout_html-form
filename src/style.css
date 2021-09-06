@@ -1,1 +1,12 @@
-/* styles go here */
+.info-sections {
+  margin-bottom: 20px;
+}
+
+.box:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bigger-text {
+  font-size: 18px;
+}
