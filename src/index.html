@@ -11,134 +11,182 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post" onsubmit="onSubmit()">
-      <fieldset class="info-sections">
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    onsubmit="onSubmit()">
+      <fieldset class="info__sections">
         <legend>Personal information</legend>
         <div class="box">
-          <label for="surname-value">
+          <label for="surnameValue">
             Surname:
-            <input type="text" name="surname"
-            id="surname-value" autocomplete="off"
-            required>
+            <input
+              type="text"
+              name="surname"
+              id="surnameValue"
+              autocomplete="off"
+              required>
           </label>
         </div>
         <div class="box">
-          <label for="name-value">
+          <label for="nameValue">
             Name:
-            <input type="text" name="name"
-             id="name-value" autocomplete="off"
-             required>
+            <input
+              type="text"
+              name="name"
+              id="nameValue"
+              autocomplete="off"
+              required>
           </label>
         </div>
         <div class="box">
-          <label for="age-value">
+          <label for="ageValue">
           How old are You?
-            <input type="number" name="age"
-            id="age-value" value="12"
-            min="8" max="100"
-            autocomplete="off" required>
+            <input
+              type="number"
+              name="age"
+              id="ageValue"
+              value="12"
+              min="8"
+              max="100"
+              autocomplete="off"
+              required>
           </label>
         </div>
         <div class="box">
-          <label for="birthday-value">
+          <label for="birthdayValue">
             Full date of birth:
-            <input type="date" name="birthday"
-            id="birthday-value" autocomplete="off"
-            max="2021-09-06" required>
+            <input
+              type="date"
+              name="birthday"
+              id="birthdayValue"
+              autocomplete="off"
+              max="2021-09-06"
+              required>
           </label>
         </div>
         <div class="box">
-          <label for="terms-agreement-value">
+          <label for="termsAgreementValue">
             I accept the term of the agreement
-            <input type="checkbox" name="terms-agreement"
-            id="terms-agreement-value" required>
+            <input
+              type="checkbox"
+              name="termsAgreement"
+              id="termsAgreementValue"
+              required>
           </label>
         </div>
       </fieldset>
-      <fieldset class="info-sections">
+      <fieldset class="info__sections">
         <legend>Registration</legend>
         <div class="box">
-          <label for="email-value">
+          <label for="emailValue">
             E-mail:
-            <input type="email" name="email"
-            id="email-value" placeholder="email@example.com"
-            autocomplete="off" required>
+            <input
+              type="email"
+              name="email"
+              id="emailValue"
+              placeholder="email@example.com"
+              autocomplete="off"
+              required>
           </label>
         </div>
         <div class="box">
-          <label for="password-value" >
+          <label for="passwordValue" >
             Password:
-            <input type="password" name="password"
-            id="password-value" minlength="5"
-            maxlength="20" autocomplete="off"
-            required>
+            <input
+              type="password"
+              name="password"
+              id="passwordValue"
+              minlength="5"
+              maxlength="20"
+              autocomplete="off"
+              required>
           </label>
         </div>
       </fieldset>
-      <fieldset class="info-sections">
+      <fieldset class="info__sections">
         <legend>An interesting fact about you!</legend>
         <div class="box">Do you love cats?
-          <label for="yes-value">
-            <input type="radio" name="cat"
-            id="yes-value">Yes
+          <label for="yesValue">
+            <input
+              type="radio"
+              name="cat"
+              id="yesValue">Yes
           </label>
-          <label for="no-value">
-            <input type="radio" name="cat"
-            id="no-value">No
+          <label for="noValue">
+            <input
+              type="radio"
+              name="cat"
+              id="noValue">No
           </label>
         </div>
         <div class="box">
-          <label for="color-value">
+          <label for="colorValue">
             What is your favorite color?
-            <input type="color" name="color"
-            id="color-value">
+            <input
+              type="color"
+              name="color"
+              id="colorValue">
           </label>
         </div>
         <div class="box">
-          <label for="time-value">
+          <label for="timeValue">
             What time do you go to bed?
-            <input type="time" name="time"
-            id="time-value" step="1">
+            <input
+              type="time"
+              name="time"
+              id="timeValue"
+              step="1">
           </label>
         </div>
         <div class="box">
-          <label for="car-value">
+          <label for="carValue">
             What are your favorite brand of cars?
-            <select name="car" id="car-value"
-            multiple>
+            <select
+              name="car"
+              id="carValue"
+              multiple>
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
-              <option value="" disabled></option>
+              <option value=""></option>
             </select>
           </label>
         </div>
         <div class="box">
-          <label for="rate-value">
+          <label for="rateValue">
             How do you rate our work?
-            <input type="range" name="rate"
-            id="rate-value" min="1"
-            max="10" value="1">
+            <input
+              type="range"
+              name="rate"
+              id="rateValue"
+              min="1"
+              max="10"
+              value="1">
           </label>
         </div>
       </fieldset>
-      <fieldset class="info-sections">
+      <fieldset class="info__sections">
         <legend>Additional info:</legend>
         <div class="box">
-          <label for="about-value">
+          <label for="aboutValue">
             Comments:
-            <textarea name="about" id="about-value"
-            cols="20" rows="2"
-            autocomplete="off">
+            <textarea
+              name="about"
+              id="aboutValue"
+              cols="20"
+              rows="2"
+              autocomplete="off">
             </textarea>
           </label>
         </div>
         <div class="box">
-          <label for="recommend-value">
+          <label for="recommendValue">
             Would you recommend us?
-            <select name="recommend" id="recommend-value"
-            required>
+            <select
+              name="recommend"
+              id="recommendValue"
+              required>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
